@@ -19,43 +19,43 @@
 <body>
   <nav><a href="/">← Parlae</a></nav>
   <h1>Privacy Policy</h1>
-  <p class="subtitle"><strong>Effective Date:</strong> February 2026 &nbsp;·&nbsp; Tharaldsen Labs, LLC</p>
+  <p class="subtitle"><strong>Updated:</strong> November 12, 2026 &nbsp;·&nbsp; Tharaldsen Labs, LLC</p>
 
-  <p>Parlae is made by <strong>Tharaldsen Labs, LLC</strong>, a North Carolina company. This policy explains how the app handles your data. The short version: we don't collect it.</p>
+  <p>Parlae is made by <strong>Tharaldsen Labs, LLC</strong>, a North Carolina company. It supports an independent iPhone runtime and an optional connection to a Parlae identity on your Mac. This policy describes the data used by those configurations and the services you connect.</p>
 
-  <h2>What We Collect</h2>
-  <p>Nothing. Parlae has no accounts, no sign-up, no analytics, no telemetry, and no cloud backend. We don't collect, store, or transmit any personal data to our servers — because we don't operate any.</p>
+  <h2>Identity, Conversations, and Memory</h2>
+  <p>In independent mode, the iPhone manages your identity settings, conversation history, saved memories, and private reflections. In connected mode, the Mac manages the identity you connect to, and the iPhone exchanges the information needed to present and participate in the conversation.</p>
+  <p>If you select a cloud model, Parlae sends the context selected for that request to the configured model provider. This can include identity instructions, your message, relevant history, retrieved memories, tool definitions, and authorized tool results. Processing by a cloud provider is subject to that provider’s terms and privacy practices.</p>
 
-  <h2>Voice Data</h2>
-  <p>Parlae uses your device's microphone to listen to your voice. Here's what happens with that audio:</p>
-  <ul>
-    <li><strong>Speech recognition happens entirely on your device</strong> using Apple's built-in Speech framework.</li>
-    <li>Your voice audio is <strong>never sent to Tharaldsen Labs</strong> or any third-party server for transcription.</li>
-    <li>The resulting text is sent only to <strong>your own self-hosted OpenClaw server</strong> — a destination you configure yourself.</li>
-    <li>We never see, store, or have access to your voice recordings or transcriptions.</li>
-  </ul>
+  <h2>Voice and Voice ID</h2>
+  <p>Parlae needs microphone permission for voice input. The iPhone supports Apple’s on-device speech recognition. Connected configurations can use the speech services configured for the Mac runtime. The configured recognition route determines where input audio is processed.</p>
+  <p>Apple speech synthesis runs on the device. If you choose a cloud voice such as Cartesia, the text to be spoken is sent to that service and speech audio is streamed back. A voice credential service can handle sign-in, access checks, and temporary credentials for this connection.</p>
+  <p>Optional Voice ID enrollment uses voice samples to create saved speaker profiles. Speaker profiles and enrollment information are sensitive. You can manage saved profiles and Voice ID settings in the app. Recognition of a speaker is an estimate and can be incorrect.</p>
 
-  <h2>Your OpenClaw Server</h2>
-  <p>Parlae connects to an OpenClaw instance that <strong>you</strong> host and control. All AI processing happens on your infrastructure, not ours. We have no access to your server, your conversations, or any data flowing between your device and your server.</p>
-  <p>You are responsible for the privacy and security of your own OpenClaw instance.</p>
+  <h2>Connected Accounts and Device Tools</h2>
+  <p>You can connect services such as email and grant access to device capabilities such as Calendar and Reminders. Parlae uses the permissions and account access you grant to search, read, or perform supported actions. Relevant results may enter the identity’s conversation context and be sent to its configured model provider.</p>
+  <p>Account sign-in and authorization involve the selected provider. You can change access in Parlae and, where supported, revoke the connection through the provider. Revoking access does not itself erase information already saved in conversation history or memory.</p>
 
-  <h2>Third-Party Services</h2>
-  <h2>Text-to-Speech</h2>
-  <p>Parlae offers two TTS options:</p>
-  <ul>
-    <li><strong>Apple TTS</strong> — Runs entirely on-device. No data leaves your phone.</li>
-    <li><strong>Microsoft Edge TTS</strong> — If you choose this option, the AI's text responses are sent to Microsoft's servers to generate speech audio. This is governed by <a href="https://privacy.microsoft.com/privacystatement">Microsoft's Privacy Policy</a>. No voice data or personal information beyond the response text is shared.</li>
-  </ul>
-  <p>You choose which TTS engine to use in the app's settings.</p>
+  <h2>Mac Workspaces, Delegated Agents, and Loopwright</h2>
+  <p>On the Mac, you may authorize workspace and application access and configure delegation to Codex or Claude Code. The selected agent receives the task and permitted context. Its configured tools and services may process code, files, or other task data under their own permissions and terms.</p>
+  <p>A Loopwright connection exchanges authorized project context, task results, and selected media with that application. Rendering or generation services configured for the project may process the inputs they require. Review those configurations before using private material.</p>
 
-  <h2>Apple Speech Recognition</h2>
-  <p>On-device speech recognition is provided by Apple's Speech framework. Parlae uses on-device recognition, meaning your audio stays on your device. See <a href="https://www.apple.com/privacy/">Apple's Privacy Policy</a> for details.</p>
+  <h2>Background Memory and Reflection</h2>
+  <p>When enabled, memory review can examine prior conversations to propose, save, or correct memories. Private reflections can revisit earlier exchanges between conversations. These operations may use the model assigned to that task, including a cloud model when permitted by your settings and provider access. Private reflections are stored for the identity and may inform later context.</p>
 
-  <h2>Data Storage</h2>
-  <p>Parlae stores your app settings (server address, preferences) locally on your device using iOS UserDefaults. This data never leaves your device and is removed when you delete the app.</p>
+  <h2>Accounts, Credentials, and Service Records</h2>
+  <p>Some integrations require accounts and saved credentials. Supported account credentials use platform credential storage such as Keychain. Providers and credential services can receive account identifiers, authorization requests, access records, and operational information needed to authenticate the connection and issue or renew access.</p>
+  <p>Identity storage on your device or Mac does not prevent information selected for an authorized request from being transmitted to a connected service. Hosting providers and connected services may also maintain their own access logs.</p>
+
+  <h2>Diagnostics and Support</h2>
+  <p>Parlae provides diagnostic reports for troubleshooting. Reports can include event names, timings, counts, and error information. The event-only conversation report excludes conversation text. Other exports, attachments, or information you choose to share with support may contain personal information. Review the material before sharing it.</p>
+
+  <h2>Storage and Your Choices</h2>
+  <p>Settings and identity records are stored on the device or Mac that manages them. Account credentials, history, memories, reflections, and speaker profiles have their own storage and management controls. Disconnecting a service, removing local app data, deleting an account at a provider, and removing provider-held records are separate actions.</p>
+  <p>Use the app’s settings to manage connections, permissions, saved records, and optional background features. Data already sent to a provider is subject to its retention and deletion policies.</p>
 
   <h2>Children's Privacy</h2>
-  <p>Parlae is not directed at children under 13. We don't knowingly collect any data from anyone, including children.</p>
+  <p>Parlae is not directed at children under 13. If you believe a child has supplied personal information through Parlae, contact us at the address below.</p>
 
   <h2>Changes to This Policy</h2>
   <p>If we update this policy, we'll post the revised version at <a href="https://parlae.ai/privacy">parlae.ai/privacy</a> and update the effective date.</p>

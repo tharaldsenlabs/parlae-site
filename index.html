@@ -3,39 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parlae — Your AI companion on iPhone and Mac</title>
-  <meta name="description" content="Talk naturally with a persistent AI identity, animated avatar, and memory you control. Use Parlae independently on iPhone or connect to your Mac for desktop capabilities.">
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 700px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.6; }
-    h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
-    h2 { font-size: 1.3rem; margin-top: 32px; }
-    p { color: #555; font-size: 1.1rem; }
-    nav { display: flex; flex-wrap: wrap; gap: 12px 20px; margin-top: 32px; }
-    nav a { color: #7C5CFC; text-decoration: none; font-weight: 500; }
-    nav a:hover { text-decoration: underline; }
-    .tagline { font-size: 1.2rem; color: #333; margin: 24px 0 32px; }
-    footer { margin: 56px 0 32px; color: #666; font-size: 0.9rem; }
-  </style>
+  <title>Parlae — An AI identity for iPhone and Mac</title>
+  <meta name="description" content="Parlae brings voice, an animated avatar, memory, and useful tools to iPhone. Connect your Mac for Codex and Claude Code delegation and Loopwright creative workflows.">
+  <link rel="canonical" href="https://parlae.ai/">
+  <link rel="stylesheet" href="/site.css">
 </head>
 <body>
-  <main>
-    <h1>Parlae</h1>
-    <p class="tagline">Your AI companion on iPhone and Mac. Talk naturally, with continuity across conversations.</p>
-    <p>Parlae brings a persistent AI identity to life through voice, an animated avatar, and memory you control. Choose your model and voice, hold a hands-free conversation, and give your identity permission to use tools that help with everyday tasks.</p>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Parlae home">Parlae</a>
+      <nav aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#modes">iPhone &amp; Mac</a>
+        <a href="#work">Delegation &amp; creativity</a>
+        <a href="#data">Your data</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="hero">
+      <p class="status">In development · Private testing</p>
+      <h1>Your AI identity,<br>with you on iPhone.</h1>
+      <p class="lead">Talk naturally with an identity that has a voice, an animated avatar, and memory you control. Use Parlae independently on your iPhone, or connect your Mac for desktop tools, coding agents, and creative work.</p>
+      <div class="actions">
+        <a class="button" href="mailto:support@tharaldsenlabs.com?subject=Parlae%20private%20testing">Ask about private testing</a>
+        <a href="#modes">Explore both modes</a>
+      </div>
+    </div>
 
-    <h2>Independent on iPhone</h2>
-    <p>Use Parlae on your iPhone with its own identity, conversation history, memory, and device tools. Cloud models connect over the internet while the phone manages your context and permissions. Supported tools include web search, Calendar, Reminders, and connected email accounts.</p>
+    <section id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title">A conversation with continuity.</h2>
+      <p class="intro">Parlae combines conversation, remembered context, and useful actions in one interface. Choose your identity’s name, appearance, voice, and model, then decide what it can access.</p>
+      <div class="grid three">
+        <article class="card">
+          <h3>Speak naturally</h3>
+          <p>Hold a hands-free conversation, interrupt a spoken reply, or switch to text. Expressions and gestures give the avatar a visible part in the exchange.</p>
+        </article>
+        <article class="card">
+          <h3>Build a shared history</h3>
+          <p>Conversation history and saved memories support later conversations. Optional memory review and private reflections help the identity revisit earlier exchanges within your settings.</p>
+        </article>
+        <article class="card">
+          <h3>Give it useful tools</h3>
+          <p>Enable web search, Calendar, Reminders, or connected email accounts. Access and available actions depend on the permissions you grant.</p>
+        </article>
+      </div>
+    </section>
 
-    <h2>Connect your Mac</h2>
-    <p>For desktop capabilities, connect the same iPhone app to a Parlae identity running on your Mac. The Mac manages that identity and its tools, including authorized access to workspaces and applications. You can talk to it from your iPhone or directly on the Mac.</p>
+    <section id="modes" aria-labelledby="modes-title">
+      <h2 id="modes-title">One iPhone app. An optional Mac connection.</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Independent on iPhone</h3>
+          <p>Your iPhone runs the identity runtime, manages its history and memory, renders the avatar, and executes supported device tools.</p>
+          <ul>
+            <li>Cloud model requests go directly from the phone to the configured provider over the internet.</li>
+            <li>Speech, conversation, and tool permissions are managed on the phone.</li>
+            <li>Use the app away from your Mac with the connectivity required by your selected model and voice services.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Connected to your Mac</h3>
+          <p>A Parlae identity on your Mac manages its context and work. Talk to it from the same iPhone app or directly through the Mac interface.</p>
+          <ul>
+            <li>Give it authorized access to desktop applications and project workspaces.</li>
+            <li>Configure Codex or Claude Code to carry out delegated work.</li>
+            <li>Connect Loopwright for creative project and clip workflows.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="note">Available integrations depend on your configuration, connected applications, and provider accounts. The Mac connection requires access to the Mac’s Parlae runtime.</p>
+    </section>
 
-    <p>Parlae is under active development and private testing. Developed by Tharaldsen Labs, LLC in North Carolina, USA.</p>
-    <nav aria-label="Company information">
-      <a href="/privacy">Privacy Policy</a>
-      <a href="/terms">Terms of Service</a>
-      <a href="mailto:support@tharaldsenlabs.com">Support</a>
-    </nav>
+    <section id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Discuss the work. Follow its progress.</h2>
+      <p class="intro">With the Mac connected, your identity can coordinate longer tasks while remaining available for conversation.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Delegate to Codex or Claude Code</h3>
+          <p>Ask your identity to investigate a problem or work on a software project. It can delegate to a configured Codex or Claude Code installation, pass the task and permitted context, follow progress, and bring the results back into the conversation.</p>
+          <p>Workspace access, agent permissions, and required approvals govern the work. You can give further instructions or stop a task.</p>
+          <div class="example"><p>“Investigate why the build failed, then explain the proposed repair before we continue.”</p></div>
+        </article>
+        <article class="card">
+          <h3>Create with Loopwright</h3>
+          <p>Loopwright is a separate creative application for developing stories, sequences, and generated clips. A connected Parlae identity can work with an authorized Loopwright project to help develop its structure, prepare clip prompts, follow production, and share completed clips with connected clients.</p>
+          <p>Project permissions and production settings determine the available actions.</p>
+          <div class="example"><p>“Help develop this scene, then show me the latest completed clip.”</p></div>
+        </article>
+      </div>
+      <p class="note">These examples describe workflows in development. Codex, Claude Code, and Loopwright require their own setup and any applicable accounts or services.</p>
+    </section>
+
+    <section id="data" aria-labelledby="data-title">
+      <h2 id="data-title">Understand where your context goes.</h2>
+      <div class="flow">
+        <div>
+          <h3>Your identity’s home</h3>
+          <p>In independent mode, identity, history, and memory are managed on the iPhone. In connected mode, the Mac manages the identity you are connected to.</p>
+          <p>Local storage and cloud processing serve different parts of the experience. A cloud model receives the context Parlae selects for the request, which can include relevant history, memories, and authorized tool results.</p>
+        </div>
+        <div>
+          <h3>Access you choose</h3>
+          <p>Device permissions, account connections, workspace access, and background memory or reflection settings control what your identity can use. Cloud voices receive the text they speak. Delegated agents and connected applications receive the context needed for authorized work.</p>
+          <p>Read the <a href="/privacy">Privacy Policy</a> for more about accounts, speech, storage, diagnostics, and connected services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="availability" aria-labelledby="availability-title">
+      <h2 id="availability-title">Being built through private testing.</h2>
+      <p class="intro">Parlae is under active development for iPhone and macOS. Current testing uses invited participants and TestFlight builds. Features, supported providers, and availability continue to evolve.</p>
+      <p>We are seeking an approved commercial integration so eligible customers can use their own ChatGPT plans in Parlae. Customer availability depends on OpenAI’s approval and the terms and limits of the supported integration.</p>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Talk to Tharaldsen Labs.</h2>
+      <p>Parlae is developed by Tharaldsen Labs, LLC in North Carolina, USA. For product questions, private testing, or integration inquiries, contact <a href="mailto:support@tharaldsenlabs.com">support@tharaldsenlabs.com</a>.</p>
+    </section>
   </main>
-  <footer>© 2026 Tharaldsen Labs, LLC — North Carolina, USA</footer>
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Tharaldsen Labs, LLC</span>
+      <nav aria-label="Legal and support">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="mailto:support@tharaldsenlabs.com">Support</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
