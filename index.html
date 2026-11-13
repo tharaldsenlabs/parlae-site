@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parlae — An AI identity that develops with you</title>
-  <meta name="description" content="A Parlae Identity carries memories, reflects on experience, and develops its own personality over time. Meet through voice and an avatar on iPhone, with optional Mac capabilities.">
+  <meta name="description" content="An evolving AI identity with memories stored on your iPhone or personal computer. Keep its history across supported model changes. Connect to your Mac for the fullest Parlae experience, or use iPhone independently.">
   <link rel="canonical" href="https://parlae.ai/">
   <link rel="stylesheet" href="/site.css">
 </head>
@@ -17,7 +17,7 @@
         <a href="#identity">The identity</a>
         <a href="#modes">iPhone &amp; Mac</a>
         <a href="#work">Delegation &amp; creativity</a>
-        <a href="#data">Your data</a>
+        <a href="#portability">Your memories</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -27,9 +27,10 @@
       <p class="status">In development · Private testing</p>
       <h1>An identity that develops<br>through time together.</h1>
       <p class="lead">A Parlae Identity carries a history. Conversations, remembered experiences, and reflection can shape its personality, perspective, and relationship with you over time. Voice and an animated avatar give you a way to meet that developing identity.</p>
+      <p class="lead">Its memories live on your iPhone or personal computer. Change supported models without starting that history over.</p>
       <div class="actions">
         <a class="button" href="mailto:support@tharaldsenlabs.com?subject=Parlae%20private%20testing">Ask about private testing</a>
-        <a href="#modes">Explore both modes</a>
+        <a href="#modes">Find your Parlae setup</a>
       </div>
     </div>
 
@@ -47,6 +48,24 @@
         </article>
       </div>
       <p class="note">This development uses saved context, memory, and model-authored reflection. Its expression depends on the selected model, enabled features, and available history.</p>
+    </section>
+
+    <section id="portability" aria-labelledby="portability-title">
+      <h2 id="portability-title">Your memories. Your devices. Your choice of model.</h2>
+      <p class="intro">The identity’s history belongs with you. Parlae keeps its saved memories and long-term continuity on the iPhone or personal computer that runs the identity, separate from the model you choose.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Private continuity under your control</h3>
+          <p>Your conversations, saved memories, and private reflections are managed in your own Parlae storage. A cloud provider’s chat history is not the home of your Parlae Identity.</p>
+          <p>You control connected services and the permissions that determine what the identity can use.</p>
+        </article>
+        <article class="card">
+          <h3>A portable identity, beyond one provider</h3>
+          <p>Switch between supported, configured models while retaining the identity and its saved memories. You do not have to rebuild its history each time you choose a different model or cloud provider.</p>
+          <p>Parlae separates continuity from inference, so that history does not lock you into one cloud provider. Available models, access requirements, and capabilities vary by setup.</p>
+        </article>
+      </div>
+      <p class="note">Local storage does not mean every request stays on your device. When you choose a cloud model, selected context—including relevant memories and history—is sent to that provider. Its processing and retention terms apply. Moving or synchronizing an identity between iPhone and Mac is separate work in development; switching modes does not currently synchronize their identities. <a href="#data">See how context is shared.</a></p>
     </section>
 
     <section id="avatar" aria-labelledby="avatar-title">
@@ -85,28 +104,29 @@
     </section>
 
     <section id="modes" aria-labelledby="modes-title">
-      <h2 id="modes-title">One iPhone app. An optional Mac connection.</h2>
+      <h2 id="modes-title">The fullest experience on your Mac. With you on iPhone.</h2>
+      <p class="intro">Server-connected Parlae is our preferred experience. Your personal computer provides the identity’s runtime, broader model choices, and tools for deeper work. The same iPhone app also supports useful independent conversation when you choose to run an identity on the phone.</p>
       <div class="grid">
         <article class="card">
-          <h3>Independent on iPhone</h3>
-          <p>Your iPhone runs the identity runtime, manages its history and memory, renders the avatar, and executes supported device tools.</p>
+          <h3>Connected to your Mac · Preferred</h3>
+          <p>A Parlae identity on your Mac manages its memories, context, and work. Talk to it from the iPhone app or directly through the Mac interface.</p>
           <ul>
-            <li>Cloud model requests go directly from the phone to the configured provider over the internet.</li>
-            <li>Speech, conversation, and tool permissions are managed on the phone.</li>
-            <li>Use the app away from your Mac with the connectivity required by your selected model and voice services.</li>
+            <li>Choose supported local models on your personal hardware or configured cloud models.</li>
+            <li>Give it authorized access to desktop applications and project workspaces.</li>
+            <li>Configure Codex or Claude Code for delegated work, and connect Loopwright for creative workflows.</li>
           </ul>
         </article>
         <article class="card">
-          <h3>Connected to your Mac</h3>
-          <p>A Parlae identity on your Mac manages its context and work. Talk to it from the same iPhone app or directly through the Mac interface.</p>
+          <h3>Independent on iPhone</h3>
+          <p>Your iPhone runs the identity runtime, stores its history and memories, renders the avatar, and executes supported phone tools. No Parlae server is required for this mode.</p>
           <ul>
-            <li>Give it authorized access to desktop applications and project workspaces.</li>
-            <li>Configure Codex or Claude Code to carry out delegated work.</li>
-            <li>Connect Loopwright for creative project and clip workflows.</li>
+            <li>Converse through a supported, configured cloud model over the internet.</li>
+            <li>Use voice, memory recall, and permitted integrations such as Calendar, Reminders, and connected email.</li>
+            <li>Manage your identity, accounts, and permissions on the phone.</li>
           </ul>
         </article>
       </div>
-      <p class="note">Available integrations depend on your configuration, connected applications, and provider accounts. The Mac connection requires access to the Mac’s Parlae runtime.</p>
+      <p class="note">Independent mode is a useful everyday experience; desktop work and delegation require the personal server. Connected mode requires access to your Mac’s Parlae runtime. Model and voice services have their own connectivity and account requirements; customer subscription access remains subject to provider approval.</p>
     </section>
 
     <section id="work" aria-labelledby="work-title">
@@ -130,11 +150,11 @@
     </section>
 
     <section id="data" aria-labelledby="data-title">
-      <h2 id="data-title">Understand where your context goes.</h2>
+      <h2 id="data-title">Local memory. Clear choices about cloud processing.</h2>
       <div class="flow">
         <div>
           <h3>Your identity’s home</h3>
-          <p>In independent mode, identity, history, and memory are managed on the iPhone. In connected mode, the Mac manages the identity you are connected to.</p>
+          <p>Your identity’s durable history and memory are stored on the device that manages it: the iPhone in independent mode, or your personal Mac in connected mode. Changing a supported model retains those records. Automatic phone–Mac identity synchronization is not yet available.</p>
           <p>Local storage and cloud processing serve different parts of the experience. A cloud model receives the context Parlae selects for the request, which can include relevant history, memories, and authorized tool results.</p>
         </div>
         <div>
